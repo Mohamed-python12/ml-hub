@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome | ML- Hub</title>
+</head>
+<body>
+     <div class="welcome">Welcome to Machine Learning - Hub</div>
+    <input type="text" id="name" placeholder="Type your name ... " autocomplete="off">
+    <input id="submit" type="button" value="submit" onclick="passvalue()"/>
+
+
+</body>
+</html>
+<style>
+body{
+    background-image: linear-gradient(to left, rgb(255, 0, 247),rgb(47, 0, 255));
+}
+.welcome{
+    text-align : center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size : 3.5vw;
+    color : white;
+    font-weight : bold;
+    margin-top: 10vw;
+}
+#name{
+margin-top : 15vw;
+background : white;
+width : 30vw;
+height : 7vw;
+border : none;
+border-radius: 25px;
+margin-left:35vw;
+text-align: center;
+font-size : 2vw;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#submit{
+margin-top: 15vw;
+margin-right: 20vw;
+float: right;
+padding: 2vw;
+background: rgb(255, 102, 0);
+border-radius: 25px;
+color:white;
+font-size: 2vw;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-weight : bold;
+
+
+}
+</style>
+<script>
+function passvalue(){
+    var firstname = document.getElementById("name").value;
+    localStorage.setItem("value", firstname);
+    window.location.replace("home.html");
+    return false;
+}
+</script>
