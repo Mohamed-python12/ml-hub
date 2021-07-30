@@ -17,7 +17,7 @@
         <li><a href="support.html">Support</a></li>
       </ul>
       <div class="container">
-          <div class="text">Machine Learning</div>
+          <div class="text">Welcome <span id="result"></span></div>
           <div class="text2">Hello Programmers 🖐</div>
           <img src="son.png" class="boy">
           <div class="boy-title">Who am I ?</div>
@@ -324,5 +324,5 @@ li a:hover {
 }
 </style>
 <script>
-  /*alert("This webpage is only compatible for computers, Gonna make it responsive :)");*/
+document.getElementById("result").innerHTML = localStorage.getItem("value");
 </script>
