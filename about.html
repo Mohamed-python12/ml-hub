@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,12 +10,12 @@
 </head>
 <body>
     <div class="about">About Me</div>
-    <a href="https://www.youtube.com/channel/UCrMyyTzoMJjy6OgFDS3Kbqw" target="_blank"><img class="yt" src="yt.png"></a><a href="https://discord.com/invite/4evDUWVpHe" target="_blank"><img src="discord.png" class="dis"></a>
 
     <img src="cool guy.png" class="cool">
     <div class="cool-text"><span style="color: #211c51;"></span>Hey Guys, My name is A.Mohamed Athif. I am 16 years old. I am from India. I've been learning python for about three years and also I have been learning machine learning for one year. So first I decided to start a discord server and also a youtube channel to share some of my thoughts and to share my knowledge with python and ml with you. Also I made it. 
         Then I decided to build a website so you guys can read tutorials through my website and also I thought that it would be easy for you. Also I am learning automation with python. My goal is to teach you guys very easily about ml and python to make everyone as a programmer. <br></div>
-
+    <a href="https://www.youtube.com/channel/UCrMyyTzoMJjy6OgFDS3Kbqw"><p class="yt">Youtube</p></a>
+    <a href="https://discord.com/invite/4evDUWVpHe"><p class="discord">Discord</p></a><br><br><br>
 </body>
 </html>
 <style>
@@ -49,19 +48,39 @@
     margin-left: 80px;
 }
 .yt{
-    float:left;
-    width : 10vw;
-    height : 10vw;
-    margin-left: 350px;
-    margin-top: 5vw;
-
+    margin-top: 350px;
+    font-size: 1.5vw;
+    color : red;
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    text-align: center;
 }
-.dis{
-    float : right;
-    width : 10vw;
-    height : 10vw;
-    margin-right: 350px;
-    margin-top: 5vw;
+.discord{
+    font-size: 1.5vw;
+    color : purple;
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+@media all and (max-width:768px){
+.cool{
+    width: 13vw;
+    height: 13vw;
+}
+.cool-text{
+    font-size: 4vw;
+    margin-right: 30px;
+    margin-left: 50px;
+}
+.yt{
+    font-size: 5vw;
+}
+.discord{
+    font-size: 5vw;
+}
 }
 
 
